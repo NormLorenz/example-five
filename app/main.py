@@ -7,5 +7,9 @@ age = 30
 def main():
     print(f'Hello, my name is {name} and I am {age} years old.')
 
+def junk():
+    print('This is a junk function that does nothing.')
+    
+
 if __name__ == "__main__":
     main()
