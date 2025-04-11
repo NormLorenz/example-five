@@ -2,6 +2,8 @@
 # The script uses f-strings for string formatting, which is a convenient way to embed expressions inside string literals.
 
 ''' This is the main entry point '''
+
+
 def main():
     name = 'John Doe'
     age = 30
@@ -12,7 +14,7 @@ def junk():
     print(f'Hello')
 
 
-def add(x, y):
+def add(x: int, y: int) -> int:
     """Returns the sum of x and y."""
     return x + y
 
