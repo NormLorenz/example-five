@@ -10,6 +10,10 @@ def main():
 def junk():
     print('This is a junk function that does nothing.')
 
+def add(x, y):
+    """Returns the sum of x and y."""
+    return x + y
+
 
 if __name__ == "__main__":
     main()

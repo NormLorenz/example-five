@@ -1,4 +1,4 @@
-from app.main import main, junk
+from app.main import main, junk, add
 
 if __name__ == '__main__':
-    junk()
+    print(add(1, 2))
