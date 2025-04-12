@@ -2,8 +2,6 @@
 # The script uses f-strings for string formatting, which is a convenient way to embed expressions inside string literals.
 
 ''' This is the main entry point '''
-
-
 def main():
     name = 'John Doe'
     age = 30

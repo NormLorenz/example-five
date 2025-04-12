@@ -5,36 +5,21 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Attach",
-            "type": "debugpy",
-            "request": "attach",
-            "connect": {
-                "host": "localhost",
-                "port": 5678
-            },
-            "pathMappings": [
-                {
-                    "localRoot": "${workspaceFolder}",
-                    "remoteRoot": "."
-                }
-            ]
-        },
-        {
-            "name": "Python: Unit Tests",
+            "name": "Python Debugger: Unit Tests",
             "type": "debugpy",
             "request": "launch",
-            "program": "${workspaceFolder}/tests",
-            "console": "integratedTerminal",
+            "module": "unittest",
             "args": [
-                "-m",
-                "unittest",
                 "discover",
                 "-s",
-                "tests"
-            ]
+                "tests",
+                "-p",
+                "*.py"
+            ],
+            "console": "integratedTerminal"
         },
         {
-            "name": "Python Debugger: Current File",
+            "name": "Python Debugger: Run Current File",
             "type": "debugpy",
             "request": "launch",
             "program": "${file}",
